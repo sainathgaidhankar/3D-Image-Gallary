@@ -43,8 +43,16 @@ img{
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
     -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+}
+
+.container:hover{
+    animation-play-state: paused;
+}
+
+img:hover{
+    transform: translateY(-3px);
 }
 
 .container span img{
